@@ -31,7 +31,8 @@ class _RandomWordState extends State<RandomWord> {
         _suggestions.addAll(generateWordPairs().take(10));
       }
       return _buildRow(_suggestions[index]);
-    });
+    },
+    padding: const EdgeInsets.all(16),);
   }
 
   Widget _buildRow(WordPair pair) {
